@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import DieWithConnect from "./ui/DieWithConnect";
+import ButtonRandomRollWithConnect from "./ui/ButtonRandomRollWithConnect";
+import ButtonSetValueWithConnect from "./ui/ButtonSetValueWithConnect";
+import DieWithHooks from "./ui/DieWithHooks";
+import ButtonRandomRollWithHooks from "./ui/ButtonRandomRollWithHooks";
+import ButtonSetValueWithHooks from "./ui/ButtonSetValueWithHooks";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1 style={{ marginTop: "150px" }}>Using the "connect" style</h1>
+      <DieWithConnect />
+      <ButtonRandomRollWithConnect />
+      <ButtonSetValueWithConnect /> */}
+
+      <h1 style={{ marginTop: "150px" }}>Using the "hooks" style</h1>
+      <DieWithHooks />
+      <ButtonRandomRollWithHooks />
+      <ButtonSetValueWithHooks />
     </div>
   );
 }
